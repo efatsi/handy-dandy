@@ -1,6 +1,10 @@
 {
   "name": "handy-dandy",
   "displayName": "handy-dandy",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/efatsi/handy-dandy"
+  },
   "description": "useful things for elias's dev environment",
   "version": "0.0.1",
   "engines": {
