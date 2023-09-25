@@ -33,7 +33,7 @@ function copyMethodName() {
  * @param {vscode.ExtensionContext} context
  */
 function activate(context) {
-	let disposable = vscode.commands.registerCommand('extension.multiCursorNumber', () => {
+	let disposable = vscode.commands.registerCommand('handy-dandy.multiCursorNumber', () => {
 		const editor = vscode.window.activeTextEditor;
 		if (editor) {
 			const selections = editor.selections;
@@ -45,7 +45,7 @@ function activate(context) {
 		}
 	});
 
-	let copyMethodNameDisposable = vscode.commands.registerCommand('extension.copyMethodName', copyMethodName);
+	let copyMethodNameDisposable = vscode.commands.registerCommand('handy-dandy.copyMethodName', copyMethodName);
 
 	context.subscriptions.push(disposable);
 	context.subscriptions.push(copyMethodNameDisposable);

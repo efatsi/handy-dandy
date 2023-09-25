@@ -16,19 +16,25 @@
   "activationEvents": [],
   "main": "./extension.js",
   "contributes": {
-    "commands": [{
-      "command": "handy-dandy.helloWorld",
-      "title": "Hello World"
-    }],
+    "commands": [
+      {
+        "command": "handy-dandy.multiCursorNumber",
+        "title": "Insert Numbers in Multiple Cursors"
+      },
+      {
+        "command": "handy-dandy.copyMethodName",
+        "title": "Copy Method Name"
+      }
+    ],
     "keybindings": [
       {
         "key": "cmd+alt+ctrl+n",
-        "command": "extension.multiCursorNumber",
+        "command": "handy-dandy.multiCursorNumber",
         "when": "editorHasMultipleSelections && editorTextFocus"
       },
       {
         "key": "cmd+alt+ctrl+l",
-        "command": "extension.copyMethodName",
+        "command": "handy-dandy.copyMethodName",
         "when": "editorTextFocus"
       }
     ]
