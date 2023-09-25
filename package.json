@@ -1,0 +1,47 @@
+{
+  "name": "handy-dandy",
+  "displayName": "handy-dandy",
+  "description": "useful things for elias's dev environment",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.82.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [{
+      "command": "handy-dandy.helloWorld",
+      "title": "Hello World"
+    }],
+    "keybindings": [
+      {
+        "key": "cmd+alt+ctrl+n",
+        "command": "extension.multiCursorNumber",
+        "when": "editorHasMultipleSelections && editorTextFocus"
+      },
+      {
+        "key": "cmd+alt+ctrl+l",
+        "command": "extension.copyMethodName",
+        "when": "editorTextFocus"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "yarn run lint",
+    "test": "node ./test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.82.0",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "16.x",
+    "eslint": "^8.47.0",
+    "glob": "^10.3.3",
+    "mocha": "^10.2.0",
+    "typescript": "^5.1.6",
+    "@vscode/test-electron": "^2.3.4"
+  }
+}
