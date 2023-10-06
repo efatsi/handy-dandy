@@ -24,6 +24,10 @@
       {
         "command": "handy-dandy.copyMethodName",
         "title": "Copy Method Name"
+      },
+      {
+        "command": "handy-dandy.setupSvgClass",
+        "title": "Setup SVG Class"
       }
     ],
     "keybindings": [
@@ -35,6 +39,11 @@
       {
         "key": "cmd+alt+ctrl+l",
         "command": "handy-dandy.copyMethodName",
+        "when": "editorTextFocus"
+      },
+      {
+        "key": "cmd+alt+ctrl+s",
+        "command": "handy-dandy.setupSvgClass",
         "when": "editorTextFocus"
       }
     ]
